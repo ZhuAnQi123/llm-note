@@ -11,7 +11,7 @@
 【相关知识点】
 
 - **Few-shot Prompting**：在 system prompt 中给 2-3 个「用户问 → 理想答」示例，让模型模仿回答风格和边界。对小模型（如 qwen-turbo）效果尤其明显。
-- **Chain-of-Thought (CoT)**：让模型「先想后答」。对 RAG 场景特别有用：
+- **Chain-of-Thought (CoT)**：就是让模型把思考过程写下来（或者在心里想一遍），再给出最终答案。对 RAG 场景特别有用：
   ```text
   请按以下步骤思考（不需要输出思考过程）：
   1. 判断用户问题属于哪个主题
@@ -25,7 +25,7 @@
 
 ## 2. 今天的实操任务
 
-### 任务 1：创建 `sophie/v1.1.yaml`
+### 任务 1：创建 `server/services/prompts/sophie/v1.1.yaml`
 
 在 v1.0 基础上增加：
 
@@ -65,7 +65,7 @@ few_shot:
       📎 来源：projects.md
 ```
 
-### 任务 2：创建 `naval/v1.1.yaml`
+### 任务 2：创建 `server/services/prompts/naval/v1.1.yaml`
 
 Naval 的 Few-shot 侧重「哲学观点 + 拒绝投资建议」：
 

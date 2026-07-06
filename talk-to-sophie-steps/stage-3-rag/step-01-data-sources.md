@@ -33,10 +33,11 @@
 ```text
 server/data/documents/
   sophie/
-    resume.md           # 你的简历（技术栈、经历、教育）
-    skills-and-stack.md # 前端 + LLM 技能清单、工具偏好
-    projects/           # 详细的项目文档文件夹
-      Project_A.md      # 每个项目一个单独的 MD 文件
+    01-profile.md          # 个人信息 + 一句话定位（对外）
+    02-skills.md           # 纯技能清单（对外）
+    03-experience-summary.md # 经历摘要（对外，或直接由 projects/ 替代）
+    04-projects/           # 详细项目文档
+      Project_A.md
       Project_B.md
   naval/
     ├── 00_index.md
