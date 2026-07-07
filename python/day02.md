@@ -12,7 +12,7 @@
     *   [Python 3.10 Match-Case 模式匹配教程](https://learnpython.com/blog/python-match-case-statement/)
 
 
-## 成果
+## 学习笔记
 
 ### 列表推导式
 对一个列表进行循环计算三种方法：for循环，map循环，列表推导式
@@ -167,3 +167,14 @@ match string:
     case other:
         print('other')
 ```
+
+* 🖊️：把下面这段 TS 代码翻译成 Python（仅用一行代码）：
+    ```typescript
+    const doubledEvens = [1, 2, 3, 4, 5, 6]
+      .filter(x => x % 2 === 0)
+      .map(x => x * 2); // 预期结果: [4, 8, 12]
+    ```
+    ```py
+    const doubledEvens = [1, 2, 3, 4, 5, 6]
+    [x*2 for x in doubledEvens if x%2==0]
+    ```

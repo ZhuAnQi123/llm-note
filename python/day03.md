@@ -8,7 +8,7 @@
     *   [Type-Safe Python for TypeScript Developers (Atomic Spin)](https://spin.atomicobject.com/type-safe-python/)
     *   [mypy 官方类型提示速查表](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
 
-## 学习成果
+## 学习笔记
 几种常用的python type
 
 ### 固定类型Final--意义相当于ts的const
