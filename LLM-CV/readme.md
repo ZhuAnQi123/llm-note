@@ -84,7 +84,14 @@
 #### 6.2.3 语义缓存 (Semantic Cache) 降本增效
 ### 6.3 业务场景微调 vs RAG vs Prompt
 #### 6.3.1 面对一个业务需求，如何技术选型？(什么时候该微调，什么时候该用 RAG/Prompt？)
-
+## 7 进阶考察
+### Prompt 工程与确定性控制 (Prompting & Structured Output)
+### 大模型底座与参数调优 (LLM Fundamentals & Decoders)
+### 工业级 RAG 与知识检索 (Advanced RAG & GraphRAG)
+### Agent 架构与复杂工作流 (Agentic Workflow & LangGraph)
+### 模型微调与数据工程 (Fine-Tuning & Alignment)
+### 性能、成本与 LLMOps 部署 (vLLM, Quantization & Serving)
+### 评估、安全与业务选型 (Evaluation, Guardrails & System Design)
 ```
 
 ---
@@ -98,4 +105,13 @@
 1. **第一步：攻克第 1 块（Prompt 高级技巧）和第 3 块（RAG 核心）** —— 这是目前面试中占比最高（约 50%）的工程实践部分。
 2. **第二步：攻克第 2 块（LLM 原理）** —— 用于应对面试中的“硬核技术深度”考察，防止被面试官“问倒”。
 3. **第三步：攻克第 4、5、6 块（Agent、评测、优化）** —— 展现你具备带项目落地、解决复杂工程痛点的高阶能力。
+
+## 实战问题：
+在面试中，我通常会通过一个真实的系统设计题来一次性串联以上考点：
+
+“给公司做一套能解析 100 页复杂 PDF（含表格）、支持多轮对话、必须严格返回 JSON 给前端渲染、且 QPS 需达到 500 的智能客服系统，请设计技术架构，并说明成本与延迟控制方案。”
+
+* 初级/中级候选人： 重点看第 1、3 模块（会写 Prompt、会用 LangChain/LlamaIndex 调 API 搭建基础 RAG）。
+
+* 资深/架构师候选人： 重点看第 4、5、6 模块（懂底座原理、能做系统级剪裁、懂 LangGraph/vLLM/GraphRAG，能把 Token 成本和延迟打下来，保证系统稳定性）。
 
